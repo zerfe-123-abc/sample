@@ -1,0 +1,110 @@
+body{
+    background-color: darkgray;
+}
+main, header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+#to-do-app{
+    position: relative;
+    background-color: rgb(247, 245, 245);
+    width: 600px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 10px;
+}
+
+#form-section{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    padding: 20px;
+
+    
+    border-radius: 4px;
+     
+    
+    
+    flex-direction: column;
+   gap :10px;
+}
+
+#form-section input,
+#form-section textarea{
+    width: 100%;
+    padding: 6px;
+}
+#form-section label{
+    font-size: 16px;
+    font-style: oblique;
+margin-bottom: 5px;
+}
+
+#task-list{
+ 
+   height: 100%;
+   overflow-y: auto;
+}
+
+
+.task button{
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.task button:first-child{
+    color:lightgray;
+}
+.task button:last-child{
+    color: rgb(169, 59, 59);
+}
+
+#task-list{
+    display: none;
+}
+
+.task{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    margin-bottom: 10px;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   padding: 0 15px;
+}
+.task-left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.task-left label{
+    font-weight: 600;
+}
+.task-center{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: gray;
+    font-size: 14px;
+}
+.task-right{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#open-form{
+    
+}
+
